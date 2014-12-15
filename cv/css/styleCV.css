@@ -1,0 +1,175 @@
+/* 
+    Created on : 13-Dec-2014, 21:29:03
+    Author     : Stephen
+*/
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:200,400,500,700);
+body{background:silver;font-family:Source Code Pro;line-height:1.2em;font-size: 100%;color:whitesmoke}
+
+#page-cv{width:940px;margin:auto;border-top:2px solid #C99E00;background-color:#2b2b2b;padding:10px}
+ul,table,p{font-size: 80%;width:100%;}
+p{color:#3E999F;font-size: 92%}
+th{background-color:#495b5d;padding:0px;margin:0px;color:black;border:1px #D6D6D6 dashed;}
+td{border:1px #D6D6D6 dashed}
+hr.black{display: block; height: 2px;
+    border: 0; border-top: 2px solid #C99E00;
+    margin: .7em 0; padding: 0;}
+hr.gray{display: block; height: 1px;
+    border: 0; border-top: 1px solid silver;
+    margin: .4em 0; padding: 0;}
+h1{font-weight: bold;letter-spacing: .8em;text-align: center;font-size: 130%;color:#e2b846;margin-top: 6px;line-height: 1.9em;width:86%;}
+th,td{padding:.5%;background-color: #596b6d;}
+header{text-align: center;}
+h2 {color:#D3201F;font-size: 105%;}
+a {color:#b671d6;}
+h4 {line-height:2em;color: #D3201F;font-size: 80%;}
+h3{line-height:3em;color: #f09740;font-size: 95%;margin-bottom: -8px;}
+td{padding-left:10px;}
+#project h3{
+
+}
+#cert li, #employment li, #project li{	
+	display: inline;
+	}	
+
+#employment ul, #project ul{
+margin-top: 8px;	
+	background-color: white;
+	/* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(240, 255, 240);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(240, 255, 240, 0.07);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    border-bottom: 1px dotted #f5dfd6;
+    padding-bottom: 4px;
+}
+#project ul{
+	border-bottom: 1px dotted #f5dfd6;
+
+	}
+
+h4 {
+	font-size:80%;
+}
+table {
+	margin: 14px 0px;
+}
+
+	#typed-cursor {	  
+	  margin-left: 46px;
+	  line-height: 22px;
+	  font-size: 36px;
+    height: 22px; 
+	  padding-left: 556px;
+    color: white;    
+	}
+	 
+	.slogan {
+	color: #2E3D48;
+	position: absolute;	
+	text-align: center;	
+	display: block;
+	width: 100%;
+}
+
+#typed-cursor {
+	color: #2E3D48;
+	/* font-weight: 100; */
+	background-color: white;
+	/* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(255, 250, 250);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(255, 250, 250, 0.1);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	overflow: hidden;
+	position: absolute;
+	margin-top: 14px;
+	padding:-10px !important;
+	text-align: right;
+}
+
+#typed-cursor.blinking {
+  -webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+    color: white;
+ }
+
+}
+
+@-moz-keyframes blink {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: white;
+ }
+
+}
+
+@-webkit-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: gray;
+ }
+
+}
+
+@-ms-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+
+}
+
+@-o-keyframes "blink" {
+	from,to {
+	color: transparent;
+}
+ 50% {
+   color: black;
+ }
+}
+
+.social {postion:absolute;
+float:left;margin:13px 4px 0;
+display: inline;
+
+clear: right;}
+#social {
+	background-color:black; 
+}
+/*colors
+coral green: #3E999F
+green: #718C00;
+mute green: #269186;
+blue: #4271AE;
+purple: #8959A8;
+white: #FFFFFF;
+darker red: #c82829;
+red: #D3201F;
+yellow: #C99E00;
+* mute red: #BF3904
+underline:#839496;
+gray:#839496;
+light-gray:#D6D6D6;
+*/
