@@ -1,88 +1,64 @@
 <?php
 
-require_once 'core/init.php';
+require_once 'core/init.php'; ?>
 
-// singleton pattern
-// $book = DB::getInstance()->query("SELECT * FROM books");
-
-// if(!$book->count()) {
-// 	echo 'No book';
-// } else {
-// 	foreach ($book->results() as $book) {
-// 		echo $book->author_name, '<br>',
-// 			 $book->title, '<br>',
-// 			 $book->link, '<br>',
-// 		     $book->image, '<br>';
-// 	}
-// }
-
-// $userInsert = DB::getInstance()->insert('registered', array(
-// 	'name' => 'Stephen',
-// 	'email' => 'My Book',
-// 	'message' => 'stevo.joc@gmail.com'
-// ));
-
-// echo '<br>';
-
-// $user = DB::getInstance()->query("SELECT * FROM users");
-
-// if(!$user->count()) {
-// 	echo 'No user';
-// } else {
-// 	foreach ($user->results() as $user) {
-// 		echo $user->first_name, '<br>',
-// 			 $user->last_name, '<br>',
-// 			 $user->email_address, '<br>';
-		     
-// 	}
-// }
-
-if(Input::exists()) {	
-	if(Token::check(Input::get('token'))) {
-	$validate = new Validate();
-	$validation = $validate->check($_POST, array(
-		'name'=> array(
-			'required' => true,
-			'min' => 2,
-			'max' => 20,
-			//'unique' => 'register'			
-		),
-		'email' => array(
-			'required' => true,
-			'min' => 6,
-			'max' => 20						
-		),
-		'message' => array(
-			'required' => true,
-			'min' => 6
-			)		
-	));          
-
-	if($validation->passed()) {		
-		echo 'Passed';
-		
-	}else {
-		print_r($validation->errors());
-		} // output errors
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<?php 
+$book = DB::getInstance()->query("SELECT * FROM books");
+if(!$book->count()) {
+	echo 'No book';
+} else {
+	foreach ($book->results() as $book) {
+		echo $book->author_name, '<br>',
+			 $book->title, '<br>',
+			 $book->link, '<br>',
+		     $book->image, '<br>';
 	}
 }
-
 ?>
-<form action="" method="post">
-	<div class="field">
-		<label for="name">name</label>
-		<input type="text" name="name" id="name" value="<?php echo escape(Input::get('name')); ?>" autocomplete="off">
-	</div>
-	
-	<div class="field">
-		<label for="email">Email</label>
-		<input type="email" name="email" id="email" value="<?php echo escape(Input::get('email')); ?>">
-	</div>
-	
-	<div class="field">
-		<label for="message">Message</label>
-		<input type="text" name="message" id="message" value="<?php echo escape(Input::get('message')); ?>">
-	</div>
-	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>"/>
-	<input type="submit" value="Register">
-</form>
+
+				<!-- Page #2 -->					
+                <article id="page-contact" class="page-round">
+                    <!-- Contact -->
+                  
+                    <header>
+                        <h2>Contact</h2>					
+                    </header>
+                    <p class="artStyle">Email: <a href="mailto:stevo.joc@gmail.com"  class="cv-hover">stevo.joc@gmail.com</a></p>		
+                    <?php
+                    if (isset($_POST['submit'])) {                       
+                        
+                            $userInsert = DB::getInstance()->insert('registered', array('name' => $_POST["name"] ,
+                            	'email' => $_POST["email"], 'message' => $_POST["message"]));                  	
+                        
+                              
+                           
+                            } else {
+                                // an error other than duplicate entry occurred
+                                echo "Exception caught:";
+                        } 
+                        ?> 
+                                            
+                    
+                    <form method="post" action="#page-contact">
+                        <label class="name">Name</label>
+                        <input class="name" name="name" type="text" placeholder="Type Here">
+                        <label class="email">Email</label>
+                        <input class="email" name="email" type="email" placeholder="Type Here">
+                        <label class="human">*What is 2+2? (Anti-spam)</label>
+                        <input class="human" name="human" placeholder="Type Here">
+                        <div id="message">
+                            <label>Message</label>
+                            <textarea name="message" placeholder="Type Here"></textarea>
+                            <input id="submit" name="submit" type="submit" value="submit">					
+                        </div>
+                    </form>
+                 				
+                </article>
+                </body>
+</html>

@@ -5,9 +5,9 @@
 @import url(//fonts.googleapis.com/css?family=Source+Code+Pro:200,400,500,700);
 body{background:silver;font-family:Source Code Pro;line-height:1.2em;font-size: 100%;color:whitesmoke}
 
-#page-cv{width:940px;margin:auto;border-top:2px solid #C99E00;background-color:white;padding:10px}
+#page-cv{width:940px;margin:auto;border-top:2px solid #C99E00;background-color:#2b2b2b;padding:10px}
 ul,table,p{font-size: 80%;width:100%;}
-p{color:#85bebf;font-size: 92%}
+p{color:#3E999F;font-size: 92%}
 th{background-color:#495b5d;padding:0px;margin:0px;color:black;border:1px #D6D6D6 dashed;}
 td{border:1px #D6D6D6 dashed}
 hr.black{display: block; height: 2px;
@@ -19,9 +19,9 @@ hr.gray{display: block; height: 1px;
 h1{font-weight: bold;letter-spacing: .8em;text-align: center;font-size: 130%;color:#e2b846;margin-top: 6px;line-height: 1.9em;width:86%;}
 th,td{padding:.5%;background-color: #596b6d;}
 header{text-align: center;}
-h2 {color:#c94444;font-size: 105%;}
+h2 {color:#D3201F;font-size: 105%;}
 a {color:#b671d6;}
-h4 {line-height:2em;color: #d17e2b;font-size: 80%;}
+h4 {line-height:2em;color: #D3201F;font-size: 80%;}
 h3{line-height:3em;color: #f09740;font-size: 95%;margin-bottom: -8px;}
 td{padding-left:10px;}
 #project h3{
@@ -29,7 +29,6 @@ td{padding-left:10px;}
 }
 #cert li, #employment li, #project li{	
 	display: inline;
-	color:black;
 	}	
 
 #employment ul, #project ul{
@@ -45,7 +44,6 @@ margin-top: 8px;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
     border-bottom: 1px dotted #f5dfd6;
     padding-bottom: 4px;
-
 }
 #project ul{
 	border-bottom: 1px dotted #f5dfd6;

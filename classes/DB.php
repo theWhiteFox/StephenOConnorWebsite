@@ -112,7 +112,7 @@ class DB {
 				$x++;
 			}
 			
-			$sql = "INSERT INTO register(`" . implode('`, `', $keys) . "`) VALUES ({$values}) ";
+			$sql = "INSERT INTO registered(`" . implode('`, `', $keys) . "`) VALUES ({$values}) ";
 			
 			if($this->query($sql, $fields)->error()) {
 				return true;
