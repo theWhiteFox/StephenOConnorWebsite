@@ -95,7 +95,7 @@ require_once 'core/init.php';
 	
 // 	<div class="field">
 // 		<label for="email">Email</label>
-// 		<input type="email" name="email" id="email" value="<?php echo escape(Input::get('email')); ?>">
+// 		<input type="email" name="email" id="email" value="<?php echo escape(Input::get('email'));?>">
 // 	</div>
 	
 // 	<div class="field">

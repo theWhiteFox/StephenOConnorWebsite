@@ -2,10 +2,9 @@
     Created on : 13-Dec-2014, 21:29:03
     Author     : Stephen
 */
-@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:200,400,500,700);
-body{background:silver;font-family:Source Code Pro;line-height:1.2em;font-size: 100%;color:whitesmoke}
+body{background:silver;font-family:Source Code Pro;line-height:1.2em;font-size: 100%;color:white;}
 
-#page-cv{width:940px;margin:auto;border-top:2px solid #C99E00;background-color:white;padding:10px}
+#page-cv{width:940px;margin:auto;border-top:2px solid #C99E00;background-color:#2b2b2b;padding:10px}
 ul,table,p{font-size: 80%;width:100%;}
 p{color:#85bebf;font-size: 92%}
 th{background-color:#495b5d;padding:0px;margin:0px;color:black;border:1px #D6D6D6 dashed;}
@@ -29,7 +28,6 @@ td{padding-left:10px;}
 }
 #cert li, #employment li, #project li{	
 	display: inline;
-	color:black;
 	}	
 
 #employment ul, #project ul{
@@ -45,7 +43,6 @@ margin-top: 8px;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
     border-bottom: 1px dotted #f5dfd6;
     padding-bottom: 4px;
-
 }
 #project ul{
 	border-bottom: 1px dotted #f5dfd6;
