@@ -21,7 +21,6 @@ if(!$book->count()) {
 	}
 }
 ?>
-
 				<!-- Page #2 -->					
                 <article id="page-contact" class="page-round">
                     <!-- Contact -->
@@ -34,17 +33,12 @@ if(!$book->count()) {
                     if (isset($_POST['submit'])) {                       
                         
                             $userInsert = DB::getInstance()->insert('registered', array('name' => $_POST["name"] ,
-                            	'email' => $_POST["email"], 'message' => $_POST["message"]));                  	
-                        
-                              
-                           
+                            	'email' => $_POST["email"], 'message' => $_POST["message"]));
                             } else {
                                 // an error other than duplicate entry occurred
                                 echo "Exception caught:";
                         } 
-                        ?> 
-                                            
-                    
+                        ?>     
                     <form method="post" action="#page-contact">
                         <label class="name">Name</label>
                         <input class="name" name="name" type="text" placeholder="Type Here">
