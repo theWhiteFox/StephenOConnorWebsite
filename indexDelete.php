@@ -2,6 +2,8 @@
 
 require_once 'core/init.php';
 
+//edit file
+
 //if(Session::exists('success')) {
 //   echo Session::flash('success');
 //}
