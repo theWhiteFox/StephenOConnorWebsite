@@ -1,0 +1,89 @@
+/* 
+    Created on : 11-Dec-2014, 12:56:19
+    Author     : Stephen
+*/
+#characterbox{  
+   margin: 0 auto;
+   background: goldenrod;
+   -webkit-border-radius:10px 10px 0 0;
+   -moz-border-radius:10px 10px 0 0;
+   border-radius:10px 10px 0 0;   
+   width:95%;   
+   height:84px;
+   display: block;
+   border-bottom: 1px solid gold;
+}
+
+#characterbox h3, #characterbox h4 {
+   font-weight: bold;
+   margin: 0;   
+   padding: 0 2%;
+}
+
+#characterbox h3 {
+   margin: 20px 10px 0px;
+   font-size: 2em;
+   line-height: .9em;
+   color: #115F79;
+}
+
+#characterbox h4 {
+   margin: 10px 10px;
+   color: #973C26;
+   font-weight: bold;   
+   line-height: 1.2em;   
+}
+
+#characterbox img {
+   float: left;
+   margin: 20px 20px 0;
+   border-radius: 10px;
+   width: 100px;
+}
+
+#characterbox p {
+   color: white; 
+   padding: 0 20px;
+}
+
+#characterbox #next_btn, #characterbox #prev_btn {
+   background-color:darkgoldenrod ;
+   padding: 2px 20px;
+   border-radius: 10px;
+   margin: 15px 5px;
+   display: inline-block;
+   float: left;
+   border:1px solid gold;
+   font-weight: bold;  
+}
+
+#characterbox #prev_btn {
+   margin-left: 20px;
+}
+
+#characterbox #next_btn {
+   margin-right: 0px;
+}
+
+#characterbox #prev_btn:hover, #characterbox #next_btn:hover {
+   background-color: hotpink;
+}
+
+#characterbox a#next_btn, #characterbox a#prev_btn {
+   text-decoration: none;   
+   color: #FFF;
+}
+
+.character
+{
+   border-top: 1px solid gold;
+   width:100%;
+   background-color: black;   
+}
+
+#characterbox h2 { 
+   padding-top: 17px;
+   font-size: 1.1em;  
+}
+
+#characterbox #git{width:22px; margin: 18px 8px 0;}
