@@ -1,5 +1,5 @@
 # Stephen O Connor Website Basic CMS
-An experiment in a website Parellex effect. 
+An experiment in website Parellex effect. 
 
 Rebuilding back end: 
 - OO PHP5 
