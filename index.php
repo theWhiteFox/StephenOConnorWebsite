@@ -23,25 +23,11 @@
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Code Pro|Ubuntu|Raleway|Open Sans|PT SANS">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" media="all" href="css/styley.min.css" /> 
-		<!-- To collect end-user usage analytics about your application,
-		insert the following script into each page you want to track.
-		Place this code immediately before the closing </head> tag,
-		and before any other scripts. Note that it may take up to 15
-		minutes to process and display information here after
-		instrumenting and opening your web page.-->
-		<script type="text/javascript">
-			window.appInsights={queue:[],applicationInsightsId:null,accountId:null,appUserId:null,configUrl:null,start:function(n){function u(n){t[n]=function(){var i=arguments;t.queue.push(function(){t[n].apply(t,i)};)};}function f(n,t){if(n){var u=r.createElement(i);u.type="text/javascript";u.src=n;u.async=!0;u.onload=t;r.getElementsByTagName(i)[0].parentNode.appendChild(u)}else t()}var r=document,t=this,i;t.applicationInsightsId=n;u("logEvent");u("logPageView");i="script";f(t.configUrl,function(){f("//az416426.vo.msecnd.net/scripts/a/ai.0.7.js")});t.start=function(){}}};
-			
-			appInsights.start("1300e47b-35fa-4cf2-944d-2dbf7fccad80");
-			appInsights.logPageView();
-			
-			document.getElementById('autoH').onmouseover();};
-		</script>
     </head>
     <body>	
-	<?php
-	require_once('connection.php');				
-	?>
+	// <?php
+	// require_once('connection.php');				
+	// ?>
 	<div id = "headerWide">	
 	<div id="git">
       <a href="https://github.com/Stevo5o" target="_blank" ><img src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a></div>
